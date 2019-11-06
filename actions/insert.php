@@ -8,7 +8,7 @@
     $rating = $_POST["rating"];
 
     //Create sql string
-    $sql = "INSERT INTO movie (title,genre,rating)
+    $sql = "INSERT INTO movies (title,genre,rating)
             VALUES ('$title', '$genre', '$rating')";
 
     //send query

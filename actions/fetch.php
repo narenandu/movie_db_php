@@ -4,7 +4,7 @@
     global $conn;
 
     //Create sql string
-    $sql = "SELECT Title, Genre, Rating FROM movie";
+    $sql = "SELECT Title, Genre, Rating FROM movies";
 
     //send query
     $result = $conn->query($sql);
