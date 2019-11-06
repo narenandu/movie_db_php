@@ -1,7 +1,8 @@
 <?php header("Location: ../index.php");
-    include("../store/db.php");
 
-    global $conn;
+    include(__DIR__.'/../store/db.php');
+
+    global $db;
     //variables for each piece of information
     $title = $_POST["title"];
     $genre = $_POST["genre"];
@@ -12,13 +13,13 @@
             VALUES ('$title', '$genre', '$rating')";
 
     //send query
-    if ($conn->query($sql) == TRUE) {
+    if ($db->query($sql) == TRUE) {
         echo "New record created successfully";
     }
     else {
-        "Error: " . $sql . "<br>" . $conn->error;
+        "Error: " . $sql . "<br>" . $db->error;
     }
 
     //close the DB connection
-    $conn->close();
+    $db->close();
 ?>

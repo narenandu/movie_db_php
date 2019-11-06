@@ -1,14 +1,14 @@
 <?php
-    include("../store/db.php");
+    include(__DIR__.'/../store/db.php');
 
-    global $conn;
+    global $db;
 
     //Create sql string
     $sql = "SELECT Title, Genre, Rating FROM movies";
 
     //send query
-    $result = $conn->query($sql);
+    $result = $db->query($sql);
 
-    //close the DB connection
-    $conn->close();
+    //close the DB dbection
+    $db->close();
 ?>
