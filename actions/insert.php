@@ -14,7 +14,7 @@
 
     //send query
     if ($db->query($sql) == TRUE) {
-        echo "New record created successfully";
+        print "New record created successfully";
     }
     else {
         "Error: " . $sql . "<br>" . $db->error;
