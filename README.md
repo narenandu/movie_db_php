@@ -24,3 +24,8 @@ Creating using the `myphpadmin` tab of local `xampp` [homepage](http://localhost
 - Fetching data from the DB
 - Displaying the data from the DB on the home page with using redirection
 - Isolating the php modules based on functionality to keep it modular
+
+----
+
+## Step by Step Instructions
+- [Creating local DB](./guide/creating_db/README.md)
